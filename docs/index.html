@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>JS ID Card</title>
+  </head>
+
+  <body>
+    <div>Your user ID is: <code id="user-id"></code></div>
+    <script src="../dist/index.js"></script>
+    <script defer>
+      const userId = document.getElementById('user-id');
+      userId.innerText = window.jsIDCard.idcard().userID;
+    </script>
+  </body>
+</html>
